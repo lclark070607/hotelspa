@@ -72,6 +72,9 @@ div.off-canvas {
 
 section.rooms {
     padding: rem-calc(30 0);
+     a {
+        color: $primary-color;
+    }
     div.room-image {
         position: relative;
 
@@ -90,6 +93,7 @@ section.rooms {
     div.room-content {
         background-color: $white;
         padding: rem-calc(20);
+        
     }
 
 }
@@ -136,6 +140,17 @@ section.rooms {
     background-image: url(../assets/images/separators/large/separator02-image.jpg);
     }
 }
+
+.rooms-image {
+    background-image: url(../assets/images/separators/small/separator03-image.jpg);
+    @include breakpoint(medium) {
+      background-image: url(../assets/images/separators/medium/separator03-image.jpg); 
+    }
+    @include breakpoint(large) {
+    background-image: url(../assets/images/separators/large/separator03-image.jpg);
+    }
+}
+
 /* About Us Section */
 .about-us-gallery {
     @include breakpoint(medium) {
@@ -221,3 +236,21 @@ footer {
         margin: 0;
     }
 }
+
+/*Internal Pages*/
+
+section.content {
+    padding: rem-calc(30, 0);
+}
+
+/*Services*/
+section.services .content-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include breakpoint(medium) {
+        height: 350px;
+    }
+}
+
+
