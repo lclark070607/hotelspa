@@ -1,0 +1,304 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home: HotelSpa</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/foundation-icons.css">
+</head>
+
+<body>
+
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
+        <h3>Navigation</h3>
+        <ul class="menu vertical" data-drilldown>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li class="has-submenu is-drilldown-submenu-parent"><a href="rooms.html">Rooms</a>
+            <ul class="menu vertical">
+              <li><a href="room-01.html">Room 01</a></li>
+              <li><a href="room-02.html">Room 02</a></li>
+              <li><a href="room-03.html">Room 03</a></li>
+              <li><a href="room-04.html">Room 04</a></li>
+              <li><a href="room-05.html">Room 05</a></li>
+              <li><a href="room-06.html">Room 06</a></li>
+            </ul>
+          </li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- off-canvas -->
+
+
+      <div class="off-canvas-content" data-off-canvas-content>
+
+
+        <section class="promo-video">
+          <div id="overlay"></div>
+          <video id="video" autoplay loop>
+            <!--Order is important, diff files for different browsers-->
+            <source src="assets/videos/videobg.mp4" type="video/mp4">
+            <source src="assets/videos/videobg.webm" type="video/webm">
+            <source src="assets/videos/videobg.ogv" type="video/ogv">
+          </video>
+
+          <div class="headliner">
+            <div class="column row">
+              <h1 class="text-center">Passion for Excellence</h1>
+            </div>
+          </div>
+          <!--.headerliner-content-->
+
+          <div class="header-content">
+            <div class="row">
+              <div class="medium-4 columns">
+                <img src="assets/images/logo.svg">
+              </div>
+              <div class="medium-4 columns">
+                <a class="menu-icon float-right" data-open="mainMenu"></a>
+              </div>
+            </div>
+          </div>
+          <!--.header-content-->
+        </section>
+
+        <section class="rooms row">
+          <h2>Our Rooms</h2>
+          <div class="medium-4 columns">
+            <div class="room-image">
+              <img src="assets/images/rooms/room-01.jpg">
+              <div class="room-title">
+                <h3>Room 1</h3>
+              </div>
+            </div>
+            <!--.room-image-->
+            <div class="room-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut obcaecati ipsum nobis quasi tempora?</p>
+            </div>
+          </div>
+          <!--.medium-4-->
+
+          <div class="medium-4 columns">
+            <div class="room-image">
+              <img src="assets/images/rooms/room-02.jpg">
+              <div class="room-title">
+                <h3>Room 2</h3>
+              </div>
+            </div>
+            <!--.room-image-->
+            <div class="room-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut obcaecati ipsum nobis quasi tempora?</p>
+            </div>
+          </div>
+          <!--.medium-4-->
+
+          <div class="medium-4 columns">
+            <div class="room-image">
+              <img src="assets/images/rooms/room-03.jpg">
+              <div class="room-title">
+                <h3>Room 3</h3>
+              </div>
+            </div>
+            <!--.room-image-->
+            <div class="room-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aut obcaecati ipsum nobis quasi tempora?</p>
+            </div>
+          </div>
+          <!--.medium-4-->
+        </section>
+
+        <div class="row columns">
+          <a class="button float-right">View All</a>
+        </div>
+
+        <!--Separator Image-->
+        <div class="separator-image pool-image"></div>
+
+        <!--About Us Gallery-->
+        <section class="about-us-gallery">
+          <div class="medium-6 columns empty"></div>
+          <div class="medium-6 columns empty bluebg"></div>
+
+          <div class="content-about-us">
+            <div class="row">
+              <div class="medium-6 columns">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nam officiis vitae odit rerum voluptatibus,
+                  tempora ad totam sapiente, placeat inventore in perspiciatis autem magni esse porro maxime accusamus. Sit!</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum unde, incidunt natus. Eum eius corporis blanditiis
+                  dolorem soluta, suscipit quos, illo eligendi veritatis tempore qui necessitatibus beatae magnam totam error
+                  officia libero dolorum rem commodi tempora. Beatae, quisquam, odio. Eveniet hic magni inventore iusto facere
+                  provident aliquid labore repellendus iure.</p>
+              </div>
+              <!-- Modals -->
+              <div class="reveal" id="galleryModal" data-close-on-click="true" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+                <img src="" id="imageContainer">
+                <button class="close-button" data-close aria-label="Close reveal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+
+              <!-- End of Modals -->
+
+
+              <div id="gallery" class="medium-6 columns bluebg">
+                <h2 class="white">Gallery
+                  <h2>
+                    <div class="row small-up-3 medium-up-3 large-up-3">
+                      <div class="column">
+                        <a data-open="galleryModal">
+                          <img class="thumbnail" src="assets/images/gallery/thumbnail/image01.jpg">
+                        </a>
+                      </div>
+                      <div class="column">
+                        <a data-open="galleryModal">
+                          <img class="thumbnail" src="assets/images/gallery/thumbnail/image02.jpg">
+                        </a>
+                      </div>
+                      <div class="column">
+                        <a data-open="galleryModal">
+                          <img class="thumbnail" src="assets/images/gallery/thumbnail/image03.jpg">
+                        </a>
+                      </div>
+                      <div class="column">
+                        <a data-open="galleryModal">
+                          <img class="thumbnail" src="assets/images/gallery/thumbnail/image04.jpg">
+                        </a>
+                      </div>
+                      <div class="column">
+                        <a data-open="galleryModal">
+                          <img class="thumbnail" src="assets/images/gallery/thumbnail/image05.jpg">
+                        </a>
+                      </div>
+                      <div class="column">
+                        <a data-open="galleryModal">
+                          <img class="thumbnail" src="assets/images/gallery/thumbnail/image06.jpg">
+                        </a>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Separator Image-->
+        <div class="separator-image bar-image"></div>
+
+        <!-- Booking Section -->
+        <section class="booking row">
+          <div class="large-8 large-centered columns text-center">
+            <h2>Book Now
+              <h2>
+                <p class="bookNow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste deserunt, aspernatur, ab laudantium excepturi
+                  accusamus delectus obcaecati earum doloremque animi eius ipsum veritatis sed veniam aliquam quasi. Voluptatem,
+                  deleniti, exercitationem!
+                </p>
+                <a data-open="modalBook" class="button">Book Now</a>
+          </div>
+        </section>
+
+        <div class="reveal" id="modalBook" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+          <h2 class="text-center">Booking Form</h2>
+          <form data-abide novalidate>
+            <div class="alert callout" style="display:none" data-abide-error>
+              <p><i class="fi-alert"></i>There are some problems in your form.</p>
+              </div>
+            <div class="row columns">
+              <label>Name:
+                  <input type="text" placeholder="Your Name" required>
+                  <span class="form-error">
+                    <i class="fi-alert"></i>The name field is mandatory.
+                    </span>
+                </label>
+            </div>
+            <div class="row columns">
+              <label>Email:
+                  <input type="text" placeholder="Your Email" required pattern="email">
+                  <span class="form-error">
+                    <i class="fi-alert"></i>The email field is mandatory.
+                    </span>
+                </label>
+            </div>
+            <div class="row columns">
+              <label>Phone Number:
+                  <input type="text" placeholder="Your Phone Number" required pattern="number">
+                  <span class="form-error">
+                    <i class="fi-alert"></i>The phone number field is mandatory.
+                    </span>
+                </label>
+            </div>
+            <div class="row columns">
+              <label>Message:
+                  <textarea placeholder="Your Message"></textarea>
+                </label>
+            </div>
+            <div class="row columns">
+              <input type="submit" class="button" value="Submit">
+              <button class="button success" type="reset" value="Reset">Reset</button>
+            </div>
+
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+          </form>
+        </div>
+
+        <footer>
+          <div class="row">
+            <nav class="large-5 columns">
+              <ul class="vertical menu large-horizontal">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+            </nav>
+            <div class="contact-information large-3 columns">
+              <ul class="no-bullet vertical">
+                <li><i class="fi-marker"></i> 222 State Street Charlotte, NC 28211</li>
+                <li><i class="fi-telephone"></i>+1-202-222-2222</li>
+                <li><i class="fi-mail"></i>contact@hotelspa.com</li>
+              </ul>
+            </div>
+            <div class="about-us large-4 columns">
+              <h4>About Us</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit autem quod, eius reiciendis quasi voluptate.</p>
+              <ul class="menu social align-right">
+                <li>
+                  <a href="http://ww.facebook.com">
+                    <i class="fi-social-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://ww.facebook.com">
+                    <i class="fi-social-facebook"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-center copyright">All Rights Reserved Louise's Hotel & Spa 2017</p>
+        </footer>
+
+      </div>
+      <!-- off-canvas-content -->
+    </div>
+    <!-- off-canvas-content-inner -->
+  </div>
+  <!-- off-canvas-wrapper -->
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/dist/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
