@@ -106,6 +106,12 @@ section.rooms {
     margin: rem-calc(20 0);
 }
 
+// .button.reset {
+//     @include button-hollow;
+//     border: 2px solid $secondary-color;
+//     color: $secondary-color;
+// }
+
 /* Separator Image */
 .separator-image {
     height: 200px;
@@ -141,15 +147,25 @@ section.rooms {
     }
 }
 
-.rooms-image {
-    background-image: url(../assets/images/separators/small/separator03-image.jpg);
-    @include breakpoint(medium) {
-      background-image: url(../assets/images/separators/medium/separator03-image.jpg); 
-    }
-    @include breakpoint(large) {
-    background-image: url(../assets/images/separators/large/separator03-image.jpg);
-    }
-}
+// .rooms-image {
+//     background-image: url(../assets/images/separators/small/separator03-image.jpg);
+//     @include breakpoint(medium) {
+//       background-image: url(../assets/images/separators/medium/separator03-image.jpg); 
+//     }
+//     @include breakpoint(large) {
+//     background-image: url(../assets/images/separators/large/separator03-image.jpg);
+//     }
+// }
+
+// .room01-image {
+//     background-image: url(../assets/images/separators/small/separator-room01-image.jpg);
+//     @include breakpoint(medium) {
+//       background-image: url(../assets/images/separators/medium/separator-room01-image.jpg); 
+//     }
+//     @include breakpoint(large) {
+//     background-image: url(../assets/images/separators/large/separator-room01-image.jpg);
+//     }
+// }
 
 /* About Us Section */
 .about-us-gallery {
